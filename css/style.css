@@ -88,6 +88,7 @@ footer h4:after{content: ""; display: block; height: 1px; width: 44px; backgroun
 footer .footer_col1 ul{width: 50%; float: left;}
 footer ul li{margin-bottom: 15px;}
 footer ul li a{color:#ececec; font-size: 14px; display: block; position: relative; padding-left: 10px;}
+footer ul li a:hover {color: #f04c36;}
 footer ul li a:before{content: ""; display: block; width: 4px; height: 1px; left: 0;  background: #fff; position: absolute; top: 10px;}
 footer .footer_col_right{float: right; width: 700px;}
 footer .footer_col2{width: 33.33%; float: left;}
@@ -101,3 +102,99 @@ footer .footer_col2 p i{ width: 20px; height: 25px; display: block; position: ab
 .footer_col2 p.phone i{background-position: -36px -555px!important;}
 p.copyrights{background: #251f5d; padding: 15px 0; text-align: center; color: #8178c6;  margin-top: 190px; font-size: 14px; line-height: 18px;}
 p.copyrights a:hover{color: #6b62ad;}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #555;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.slick-prev:before, .slick-next:before{ content: "\f104"; display: block; font-family: FontAwesome; font-size: 20px;}
+.slick-next:before{content: "\f105";}
+.service_list{ position: relative; box-sizing: border-box; padding: 0 20px!important; }
+.slick-list{height: 250px;}
+.slick-next {right: -15px;}
+.slick-prev {left: -15px;}
+.slick-slider{  position: relative;  display: block;  box-sizing: border-box;  -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{position: relative;  display: block;  overflow: hidden;  margin: 0;  padding: 0;}
+.slick-list:focus{ outline: none;}
+.slick-list.dragging{ cursor: pointer; cursor: hand;}
+.slick-dots{display: none!important;}
+.nav_bottom .mobile_menu{display: none; font-family: FontAwesome; font-size: 20px; color: #fff; position: absolute; right: 15px;}
+
+@media screen and (max-width: 1200px) {
+    .container {width: 980px;}
+    header .container{width: 95%;}
+    .search_auto{width: 210px;}
+    a.top_logo{margin-right: 10px;}
+    .banner_content{width: 470px;}
+    .banner_content h1{font-size: 40px;}
+    .banner_content p{font-size: 24px;}
+    .bottom_service_ads{width: 30%;}
+    .bottom_service_right{width: 70%;}
+    .bottom_service_right .service_block{width: 31%; margin-left: 2.33%; margin-bottom: 10px;  height: 165px;}
+    .service_block .details h2, .service_block .details p{margin-top: 5px;}
+    .service_block .details p{line-height: 17px;}
+    footer .footer_col1{width: 35%}
+    footer .footer_col_right{width: 65%;}
+}
+
+@media screen and (max-width: 979px) {
+    .container{width: 95%;}
+    .top_link a{font-size: 0px;}
+    .top_link a i{font-size: 25px;}
+    .banner{background-size: cover; height: 390px;}
+    .banner_content{width: 50%; top: 10%;}
+    .banner_content h1{font-size: 25px; font-weight: 700; line-height: 30px;}
+    .banner_content p{font-size: 15px;}
+    .banner_content a{font-size: 13px; padding: 5px 25px; margin-top: 20px}
+    .bottom_service_right .service_block{width: 46%;}
+    
+}
+
+@media screen and (max-width: 767px) {
+    .search_auto{display: none;}
+    .nav_bottom nav{float: none;}
+    .right_link{margin-right: 40px;}
+    .nav_bottom .mobile_menu{display: block;}
+    .nav_bottom nav ul{display: none; position: absolute; z-index: 2; background: #393075; top:103px; left: 0; width: 100%;}
+    .nav_bottom nav ul li{float: none; padding: 10px; margin: 0px;}
+    footer .footer_col1, footer .footer_col_right{width: 100%;}
+}
+
+@media screen and (max-width: 480px) {
+    a.top_logo{background-size: cover; width: 130px; height: 31px; margin-top: 17px;}
+    .top_login{margin-left: 0px;}
+    .top_cart{margin-right: 5px;}
+    .banner_content h1{font-size: 17px; line-height: 24px;}
+    .banner_content p{padding-top: 10px}
+    .bottom_service_ads,.bottom_service_right{width: 100%;}
+    .bottom_service_right .service_block{width: 100%; margin-left: 0px;}
+    footer .footer_col2{width: 100%;}
+    .top_login a{height: 30px; line-height: 30px; padding: 0 17px; margin-top: 17px; font-size: 10px;}
+    p.copyrights{font-size: 10px;}
+}
